@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sour Pickle - Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="media/logo.png" alt="The Sour Pickle" class="logo-img"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="contact.html">Partnership Request</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Our Pickle Collection</h2>
+        <p class="section-subtitle">Click "Quick Info" to learn more about each pickle, then add your favorites to the order.</p>
+
+        <div id="deal-of-day" class="deal-banner">
+          <div class="deal-content">
+            <span class="deal-badge">🔥 Deal of the Day</span>
+            <h3 id="deal-product">Classic Dill</h3>
+            <p id="deal-desc">15% off any size — grab today's special!</p>
+            <div class="deal-timer">
+              <span>Ends in:</span>
+              <span id="timer-display">00:00:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+          <div class="product-card" data-id="classic-dill">
+            <div class="product-image">
+              <img src="media/dillpickle.png" alt="Classic Dill" class="product-img">
+            </div>
+            <h3>Classic Dill</h3>
+            <p class="product-desc">Black peppercorn, garlic, mustard seed, white vinegar.</p>
+            <div class="product-info-hidden" id="info-classic-dill">
+              <p>Ingredients: Black peppercorn, garlic, mustard seed, white vinegar. Aged 14 days for classic dill flavor.</p>
+            </div>
+            <button class="btn btn-small info-btn" data-target="info-classic-dill">Quick Info</button>
+            <div class="product-size">
+              <select id="size-classic-dill" class="size-select">
+                <option value="500ml" data-price="5">Small 500ml - $5</option>
+                <option value="1L" data-price="10">Large 1L - $10</option>
+              </select>
+            </div>
+            <div class="product-order">
+              <label for="qty-classic-dill">Qty:</label>
+              <input type="number" id="qty-classic-dill" class="qty-input" value="0" min="0" max="99">
+              <button class="btn btn-small add-btn" data-name="Classic Dill" data-qty="qty-classic-dill" data-size="size-classic-dill">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="bread-butter">
+            <div class="product-image">
+              <img src="media/beetsandonion.png" alt="Pickled Beets and Onions" class="product-img">
+            </div>
+            <h3>Pickled Beets and Onions</h3>
+            <p class="product-desc">Clove, peppercorn, apple cider vinegar.</p>
+            <div class="product-info-hidden" id="info-bread-butter">
+              <p>Ingredients: Clove, peppercorn, apple cider vinegar. Sweet and tangy pickled beets and onions.</p>
+            </div>
+            <button class="btn btn-small info-btn" data-target="info-bread-butter">Quick Info</button>
+            <div class="product-size">
+              <select id="size-bread-butter" class="size-select">
+                <option value="500ml" data-price="5">Small 500ml - $5</option>
+                <option value="1L" data-price="10">Large 1L - $10</option>
+              </select>
+            </div>
+            <div class="product-order">
+              <label for="qty-bread-butter">Qty:</label>
+              <input type="number" id="qty-bread-butter" class="qty-input" value="0" min="0" max="99">
+              <button class="btn btn-small add-btn" data-name="Pickled Beets and Onions" data-qty="qty-bread-butter" data-size="size-bread-butter">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="spicy-garlic">
+            <div class="product-image">
+              <img src="media/cherrytomato.png" alt="Pickled Cherry Tomatoes" class="product-img">
+            </div>
+            <h3>Pickled Cherry Tomatoes</h3>
+            <p class="product-desc">Basil, oregano, parsley, garlic, white wine vinegar.</p>
+            <div class="product-info-hidden" id="info-spicy-garlic">
+              <p>Ingredients: Basil, oregano, parsley, garlic, white wine vinegar. A bright and herby pickled tomato.</p>
+            </div>
+            <button class="btn btn-small info-btn" data-target="info-spicy-garlic">Quick Info</button>
+            <div class="product-size">
+              <select id="size-spicy-garlic" class="size-select">
+                <option value="500ml" data-price="5">Small 500ml - $5</option>
+                <option value="1L" data-price="10">Large 1L - $10</option>
+              </select>
+            </div>
+            <div class="product-order">
+              <label for="qty-spicy-garlic">Qty:</label>
+              <input type="number" id="qty-spicy-garlic" class="qty-input" value="0" min="0" max="99">
+              <button class="btn btn-small add-btn" data-name="Pickled Cherry Tomatoes" data-qty="qty-spicy-garlic" data-size="size-spicy-garlic">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-id="sour-kosher">
+            <div class="product-image">
+              <img src="media/daikonandcarrot.png" alt="Pickled Daikon and Carrots" class="product-img">
+            </div>
+            <h3>Pickled Daikon and Carrots</h3>
+            <p class="product-desc">Cilantro, lemongrass, rice wine vinegar.</p>
+            <div class="product-info-hidden" id="info-sour-kosher">
+              <p>Ingredients: Cilantro, lemongrass, rice wine vinegar. A crisp and refreshing pickled daikon and carrot blend.</p>
+            </div>
+            <button class="btn btn-small info-btn" data-target="info-sour-kosher">Quick Info</button>
+            <div class="product-size">
+              <select id="size-sour-kosher" class="size-select">
+                <option value="500ml" data-price="5">Small 500ml - $5</option>
+                <option value="1L" data-price="10">Large 1L - $10</option>
+              </select>
+            </div>
+            <div class="product-order">
+              <label for="qty-sour-kosher">Qty:</label>
+              <input type="number" id="qty-sour-kosher" class="qty-input" value="0" min="0" max="99">
+              <button class="btn btn-small add-btn" data-name="Pickled Daikon and Carrots" data-qty="qty-sour-kosher" data-size="size-sour-kosher">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="order-summary" class="order-summary">
+          <h3>Order Summary</h3>
+          <div id="order-items">
+            <p class="empty-order">Your order is empty. Add some pickles!</p>
+          </div>
+          <div class="bundle-deal" id="bundle-section">
+            <label class="bundle-toggle">
+              <input type="checkbox" id="bundle-check">
+              <span class="bundle-label">🎁 Bundle Deal — <strong>4 smalls $15</strong> · <strong>4 larges $30</strong> <span id="bundle-savings"></span></span>
+            </label>
+            <p class="bundle-hint" id="bundle-hint">Add at least 4 jars to unlock this deal.</p>
+          </div>
+          <div class="order-total">
+            <span>Estimated Total:</span>
+            <span id="total-display">$0.00</span>
+          </div>
+          <button id="clear-order" class="btn btn-secondary">Clear Order</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 The Sour Pickle. Made with love and cucumbers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

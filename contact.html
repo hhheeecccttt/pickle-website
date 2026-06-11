@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sour Pickle - Partnership Request</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="media/logo.png" alt="The Sour Pickle" class="logo-img"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="contact.html" class="active">Partnership Request</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Partnership Request</h2>
+        <p class="section-subtitle">Interested in carrying our pickles or collaborating? Fill out the form below and we'll get back to you within 24 hours!</p>
+
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <form id="partner-form">
+              <div class="form-group">
+                <label for="business-name">Business Name</label>
+                <input type="text" id="business-name" name="business" required placeholder="e.g. Farmer's Market Co.">
+              </div>
+
+              <div class="form-group">
+                <label for="customer-name">Contact Person</label>
+                <input type="text" id="customer-name" name="name" required placeholder="e.g. Jane Farmer">
+              </div>
+
+              <div class="form-group">
+                <label for="customer-email">Email Address</label>
+                <input type="email" id="customer-email" name="email" required placeholder="e.g. jane@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="customer-phone">Phone Number</label>
+                <input type="tel" id="customer-phone" name="phone" placeholder="e.g. (555) 123-4567">
+              </div>
+
+              <div class="form-group">
+                <label for="partner-type">Partnership Type</label>
+                <select id="partner-type" name="type">
+                  <option value="">Select one...</option>
+                  <option value="Retail Partnership">Retail Partnership</option>
+                  <option value="Wholesale Order">Wholesale Order</option>
+                  <option value="Event Collaboration">Event Collaboration</option>
+                  <option value="Catering Inquiry">Catering Inquiry</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="product-select">Product Request</label>
+                <select id="product-select" name="product">
+                  <option value="">Select a product...</option>
+                  <option value="Classic Dill">Classic Dill</option>
+                  <option value="Pickled Cherry Tomatoes">Pickled Cherry Tomatoes</option>
+                  <option value="Pickled Beets and Onions">Pickled Beets and Onions</option>
+                  <option value="Pickled Daikon and Carrots">Pickled Daikon and Carrots</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="order-quantity">Quantity (jars)</label>
+                <input type="number" id="order-quantity" name="quantity" min="1" max="50" value="1">
+              </div>
+
+              <div class="form-group">
+                <label for="comments">Message</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your partnership idea..."></textarea>
+              </div>
+
+              <button type="submit" id="submit-partner" class="btn">Submit Partnership Request</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-card">
+              <h3>Visit Us</h3>
+              <p>123 Garden Lane<br>Pickle Springs, ON</p>
+            </div>
+            <div class="info-card">
+              <h3>Contact</h3>
+              <p>hello@thesourpickle.com<br>(555) 123-PICKLE</p>
+            </div>
+            <div class="info-card">
+              <h3>Hours</h3>
+              <p>Mon–Fri: 9am – 6pm<br>Sat: 10am – 4pm<br>Sun: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="confirmation-message" class="confirmation-hidden"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 The Sour Pickle. Made with love and cucumbers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
